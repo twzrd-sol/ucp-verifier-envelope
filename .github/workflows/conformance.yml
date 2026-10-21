@@ -69,7 +69,7 @@ jobs:
       # reader following the README correctly.
       - name: deps
         if: steps.profile.outputs.present == 'true'
-        run: pip install pqcrypto cryptography rfc8785
+        run: pip install pqcrypto==0.3.4 cryptography rfc8785
       - name: verify (the gate; 7/7 or red)
         if: steps.profile.outputs.present == 'true'
         working-directory: algovoi-provenance

@@ -9,7 +9,7 @@ defined in the envelope spec.
 ## Reproduce
 
 ```
-pip install pqcrypto cryptography rfc8785
+pip install pqcrypto==0.3.4 cryptography rfc8785
 python gen_vectors.py   # regenerates vectors/test-jwks.json and vectors/vectors.json
 python verify.py        # verifies all 7 vectors; exits non-zero on any mismatch
 ```
