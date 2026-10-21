@@ -1,0 +1,15 @@
+{
+  "name": "@twzrd/ucp-seller-observation-conformance",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline conformance reference for the draft xyz.twzrd.seller_observation UCP signal.",
+  "scripts": {
+    "generate": "node scripts/generate-vectors.mjs",
+    "verify": "node verify.mjs",
+    "test": "node --test test/*.test.mjs && npm run verify"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -27,6 +27,7 @@ on:
       - 'fidacy-risk/**'
       - 'fidacy-provenance/**'
       - 'facet-identity/**'
+      - 'twzrd-observation/**'
       - '.github/workflows/conformance.yml'
   workflow_dispatch: {}
   schedule:
@@ -129,6 +130,26 @@ jobs:
       - name: verify committed vectors (the gate; 10/10 or red)
         working-directory: facet-identity
         run: node verify.mjs
+
+  # ---------------------------------------------------------------------
+  # The TWZRD seller-observation profile. Same rule: verify.mjs runs over
+  # the committed bytes, regenerates nothing, no network. Own job because
+  # it is a different issuer.
+  # ---------------------------------------------------------------------
+  twzrd-observation:
+    if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '20'
+      # Dependency-free: node:test unit tests, then verify.mjs over the
+      # committed vectors.
+      - name: test + verify committed vectors (the gate; 10/10 tests, 8/8 vectors or red)
+        working-directory: twzrd-observation
+        run: npm test
 
   # ---------------------------------------------------------------------
   # Live end to end. Cron only. Mints a real KYA and verifies two

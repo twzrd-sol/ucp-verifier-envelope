@@ -1,0 +1,182 @@
+{
+  "profile": "xyz.twzrd.seller_observation/1",
+  "reference_time": 1792497600,
+  "expected_session": "ucp:checkout:cs_external_001",
+  "vectors": {
+    "valid": {
+      "envelope": {
+        "format": "application/twzrd-seller-observation+jwt",
+        "jws": "eyJhbGciOiJFZERTQSIsImtpZCI6InR3enJkLXNlbGxlci1vYnNlcnZhdGlvbi10ZXN0LTIwMjYtMTAiLCJ0eXAiOiJhcHBsaWNhdGlvbi90d3pyZC1zZWxsZXItb2JzZXJ2YXRpb24rand0In0.eyJhdWQiOiJ1Y3A6Y2hlY2tvdXQ6Y3NfZXh0ZXJuYWxfMDAxIiwiZXhwIjoxNzkyNDk3ODcwLCJpYXQiOjE3OTI0OTc1NzAsImlzcyI6Imh0dHBzOi8vdHd6cmQueHl6IiwianRpIjoidXJuOnV1aWQ6MDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAxIiwibmJmIjoxNzkyNDk3NTcwLCJvYnNlcnZhdGlvbiI6eyJhcnRpZmFjdF9kaWdlc3QiOiJzaGEyNTY6ODFlNzcyZTlmNWU3YjIwNzEyZjkxOGRlOWVlZDY1NmIzMDQzMDY4YWY5ZGE2MTUyYzQ3YWYyNjNlNDVlYTNmYiIsImFydGlmYWN0X3NwZWMiOiJjb20udHd6cmQuc2hvcHBpbmcubGlzdGluZ19jbGFpbXMvMS4xIiwiYXJ0aWZhY3RfdXJpIjoidHd6cmQ6Ly9jbGFpbXMvZXhhbXBsZS1zZWxsZXIiLCJldmlkZW5jZV9kaWdlc3QiOiJzaGEyNTY6MWVjMmUyYzM4NDkyZWQ0MDcwZDdiYTdiNjk4Y2VjYWFlZGM1ZWMxYmI5NzQyYjdlZjVlNTE3ODlkYmQ5MzE5MCIsImV2aWRlbmNlX3VyaSI6InR3enJkOi8vY2xhaW1zL2V4YW1wbGUtc2VsbGVyL2V2aWRlbmNlIiwiZXhwaXJlc19hdCI6MTc5MjUwMTIwMCwia2luZCI6InB1YmxpY19saXN0aW5nIiwib2JzZXJ2ZWRfYXQiOiIyMDI2LTEwLTIwVDExOjU4OjAwWiJ9LCJwYXJ0eSI6eyJjbGFzc2lmaWNhdGlvbiI6ImV4dGVybmFsIiwiY2xhc3NpZmllZF9hdCI6IjIwMjYtMTAtMjBUMTE6NTk6MDBaIiwicm9sZXMiOnsiZXNjcm93X2FnZW50IjpmYWxzZSwiZmFjaWxpdGF0b3IiOmZhbHNlLCJmZWVfcmVjaXBpZW50IjpmYWxzZSwibWVyY2hhbnQiOmZhbHNlLCJtZXRlciI6ZmFsc2UsInNlbGxlcl9vcGVyYXRvciI6ZmFsc2UsInNldHRsZXIiOmZhbHNlLCJzcG9uc29yIjpmYWxzZX19LCJwb2xpY3lfdmVyc2lvbiI6InNlbGxlci1vYnNlcnZhdGlvbi1wYXJ0eS1wb2xpY3kvMSIsInByb2ZpbGUiOiJ4eXoudHd6cmQuc2VsbGVyX29ic2VydmF0aW9uLzEiLCJzZWxsZXIiOnsiaWQiOiJzb2xhbmE6NWV5a3Q0VXNGdjhQOE5KZFRSRXBZMXZ6cUtxWkt2ZHA6U2VsbGVyMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTEiLCJuZXR3b3JrIjoic29sYW5hOjVleWt0NFVzRnY4UDhOSmRUUkVwWTF2enFLcVpLdmRwIn0sInN1YiI6InNvbGFuYTo1ZXlrdDRVc0Z2OFA4TkpkVFJFcFkxdnpxS3FaS3ZkcDpTZWxsZXIxMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMSJ9.yJhWX1OY_x-dW5lS3m-CsbR2KOML_abQJaVyDeuORSHxObZtVR5K7gZI6Qv8sIhkp6KMJB8xTm-8BoTOAL7BAw",
+        "kid": "twzrd-seller-observation-test-2026-10",
+        "provider_jwks": "https://twzrd.xyz/.well-known/jwks.json"
+      },
+      "expected": {
+        "signature_valid": true,
+        "accepted": true,
+        "reason": "ok"
+      }
+    },
+    "expired": {
+      "envelope": {
+        "format": "application/twzrd-seller-observation+jwt",
+        "jws": "eyJhbGciOiJFZERTQSIsImtpZCI6InR3enJkLXNlbGxlci1vYnNlcnZhdGlvbi10ZXN0LTIwMjYtMTAiLCJ0eXAiOiJhcHBsaWNhdGlvbi90d3pyZC1zZWxsZXItb2JzZXJ2YXRpb24rand0In0.eyJhdWQiOiJ1Y3A6Y2hlY2tvdXQ6Y3NfZXh0ZXJuYWxfMDAxIiwiZXhwIjoxNzkyNDk3NTk5LCJpYXQiOjE3OTI0OTczMDAsImlzcyI6Imh0dHBzOi8vdHd6cmQueHl6IiwianRpIjoidXJuOnV1aWQ6MDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwibmJmIjoxNzkyNDk3MzAwLCJvYnNlcnZhdGlvbiI6eyJhcnRpZmFjdF9kaWdlc3QiOiJzaGEyNTY6ODFlNzcyZTlmNWU3YjIwNzEyZjkxOGRlOWVlZDY1NmIzMDQzMDY4YWY5ZGE2MTUyYzQ3YWYyNjNlNDVlYTNmYiIsImFydGlmYWN0X3NwZWMiOiJjb20udHd6cmQuc2hvcHBpbmcubGlzdGluZ19jbGFpbXMvMS4xIiwiYXJ0aWZhY3RfdXJpIjoidHd6cmQ6Ly9jbGFpbXMvZXhhbXBsZS1zZWxsZXIiLCJldmlkZW5jZV9kaWdlc3QiOiJzaGEyNTY6MWVjMmUyYzM4NDkyZWQ0MDcwZDdiYTdiNjk4Y2VjYWFlZGM1ZWMxYmI5NzQyYjdlZjVlNTE3ODlkYmQ5MzE5MCIsImV2aWRlbmNlX3VyaSI6InR3enJkOi8vY2xhaW1zL2V4YW1wbGUtc2VsbGVyL2V2aWRlbmNlIiwiZXhwaXJlc19hdCI6MTc5MjUwMTIwMCwia2luZCI6InB1YmxpY19saXN0aW5nIiwib2JzZXJ2ZWRfYXQiOiIyMDI2LTEwLTIwVDExOjU0OjAwWiJ9LCJwYXJ0eSI6eyJjbGFzc2lmaWNhdGlvbiI6ImV4dGVybmFsIiwiY2xhc3NpZmllZF9hdCI6IjIwMjYtMTAtMjBUMTE6NTQ6MzBaIiwicm9sZXMiOnsiZXNjcm93X2FnZW50IjpmYWxzZSwiZmFjaWxpdGF0b3IiOmZhbHNlLCJmZWVfcmVjaXBpZW50IjpmYWxzZSwibWVyY2hhbnQiOmZhbHNlLCJtZXRlciI6ZmFsc2UsInNlbGxlcl9vcGVyYXRvciI6ZmFsc2UsInNldHRsZXIiOmZhbHNlLCJzcG9uc29yIjpmYWxzZX19LCJwb2xpY3lfdmVyc2lvbiI6InNlbGxlci1vYnNlcnZhdGlvbi1wYXJ0eS1wb2xpY3kvMSIsInByb2ZpbGUiOiJ4eXoudHd6cmQuc2VsbGVyX29ic2VydmF0aW9uLzEiLCJzZWxsZXIiOnsiaWQiOiJzb2xhbmE6NWV5a3Q0VXNGdjhQOE5KZFRSRXBZMXZ6cUtxWkt2ZHA6U2VsbGVyMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTEiLCJuZXR3b3JrIjoic29sYW5hOjVleWt0NFVzRnY4UDhOSmRUUkVwWTF2enFLcVpLdmRwIn0sInN1YiI6InNvbGFuYTo1ZXlrdDRVc0Z2OFA4TkpkVFJFcFkxdnpxS3FaS3ZkcDpTZWxsZXIxMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMSJ9.Iq7r7lR3KzwJaQFWdfiRmH2sYmkVmNqwkYnaVMwpTYie9iSOwys7_Ea8p-5RlYOa2uCowhMamELL8XGclu_3Aw",
+        "kid": "twzrd-seller-observation-test-2026-10",
+        "provider_jwks": "https://twzrd.xyz/.well-known/jwks.json"
+      },
+      "expected": {
+        "signature_valid": true,
+        "accepted": false,
+        "reason": "expired"
+      }
+    },
+    "wrong-session": {
+      "envelope": {
+        "format": "application/twzrd-seller-observation+jwt",
+        "jws": "eyJhbGciOiJFZERTQSIsImtpZCI6InR3enJkLXNlbGxlci1vYnNlcnZhdGlvbi10ZXN0LTIwMjYtMTAiLCJ0eXAiOiJhcHBsaWNhdGlvbi90d3pyZC1zZWxsZXItb2JzZXJ2YXRpb24rand0In0.eyJhdWQiOiJ1Y3A6Y2hlY2tvdXQ6Y3Nfb3RoZXIiLCJleHAiOjE3OTI0OTc4NzAsImlhdCI6MTc5MjQ5NzU3MCwiaXNzIjoiaHR0cHM6Ly90d3pyZC54eXoiLCJqdGkiOiJ1cm46dXVpZDowMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDMiLCJuYmYiOjE3OTI0OTc1NzAsIm9ic2VydmF0aW9uIjp7ImFydGlmYWN0X2RpZ2VzdCI6InNoYTI1Njo4MWU3NzJlOWY1ZTdiMjA3MTJmOTE4ZGU5ZWVkNjU2YjMwNDMwNjhhZjlkYTYxNTJjNDdhZjI2M2U0NWVhM2ZiIiwiYXJ0aWZhY3Rfc3BlYyI6ImNvbS50d3pyZC5zaG9wcGluZy5saXN0aW5nX2NsYWltcy8xLjEiLCJhcnRpZmFjdF91cmkiOiJ0d3pyZDovL2NsYWltcy9leGFtcGxlLXNlbGxlciIsImV2aWRlbmNlX2RpZ2VzdCI6InNoYTI1NjoxZWMyZTJjMzg0OTJlZDQwNzBkN2JhN2I2OThjZWNhYWVkYzVlYzFiYjk3NDJiN2VmNWU1MTc4OWRiZDkzMTkwIiwiZXZpZGVuY2VfdXJpIjoidHd6cmQ6Ly9jbGFpbXMvZXhhbXBsZS1zZWxsZXIvZXZpZGVuY2UiLCJleHBpcmVzX2F0IjoxNzkyNTAxMjAwLCJraW5kIjoicHVibGljX2xpc3RpbmciLCJvYnNlcnZlZF9hdCI6IjIwMjYtMTAtMjBUMTE6NTg6MDBaIn0sInBhcnR5Ijp7ImNsYXNzaWZpY2F0aW9uIjoiZXh0ZXJuYWwiLCJjbGFzc2lmaWVkX2F0IjoiMjAyNi0xMC0yMFQxMTo1OTowMFoiLCJyb2xlcyI6eyJlc2Nyb3dfYWdlbnQiOmZhbHNlLCJmYWNpbGl0YXRvciI6ZmFsc2UsImZlZV9yZWNpcGllbnQiOmZhbHNlLCJtZXJjaGFudCI6ZmFsc2UsIm1ldGVyIjpmYWxzZSwic2VsbGVyX29wZXJhdG9yIjpmYWxzZSwic2V0dGxlciI6ZmFsc2UsInNwb25zb3IiOmZhbHNlfX0sInBvbGljeV92ZXJzaW9uIjoic2VsbGVyLW9ic2VydmF0aW9uLXBhcnR5LXBvbGljeS8xIiwicHJvZmlsZSI6Inh5ei50d3pyZC5zZWxsZXJfb2JzZXJ2YXRpb24vMSIsInNlbGxlciI6eyJpZCI6InNvbGFuYTo1ZXlrdDRVc0Z2OFA4TkpkVFJFcFkxdnpxS3FaS3ZkcDpTZWxsZXIxMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMSIsIm5ldHdvcmsiOiJzb2xhbmE6NWV5a3Q0VXNGdjhQOE5KZFRSRXBZMXZ6cUtxWkt2ZHAifSwic3ViIjoic29sYW5hOjVleWt0NFVzRnY4UDhOSmRUUkVwWTF2enFLcVpLdmRwOlNlbGxlcjExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExIn0.mmwgrHu8qudYYFj4oMW4rnZ_cW3fErlOdJ-zLRpc4WJ0R5Gc1QpuV-k30oYdN9hMREDgR0hTP--WxCCVwbgLCA",
+        "kid": "twzrd-seller-observation-test-2026-10",
+        "provider_jwks": "https://twzrd.xyz/.well-known/jwks.json"
+      },
+      "expected": {
+        "signature_valid": true,
+        "accepted": false,
+        "reason": "scope_mismatch"
+      }
+    },
+    "bad-signature": {
+      "envelope": {
+        "format": "application/twzrd-seller-observation+jwt",
+        "jws": "eyJhbGciOiJFZERTQSIsImtpZCI6InR3enJkLXNlbGxlci1vYnNlcnZhdGlvbi10ZXN0LTIwMjYtMTAiLCJ0eXAiOiJhcHBsaWNhdGlvbi90d3pyZC1zZWxsZXItb2JzZXJ2YXRpb24rand0In0.eyJhdWQiOiJ1Y3A6Y2hlY2tvdXQ6Y3NfZXh0ZXJuYWxfMDAxIiwiZXhwIjoxNzkyNDk3ODcwLCJpYXQiOjE3OTI0OTc1NzAsImlzcyI6Imh0dHBzOi8vdHd6cmQueHl6IiwianRpIjoidXJuOnV1aWQ6MDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAxIiwibmJmIjoxNzkyNDk3NTcwLCJvYnNlcnZhdGlvbiI6eyJhcnRpZmFjdF9kaWdlc3QiOiJzaGEyNTY6ODFlNzcyZTlmNWU3YjIwNzEyZjkxOGRlOWVlZDY1NmIzMDQzMDY4YWY5ZGE2MTUyYzQ3YWYyNjNlNDVlYTNmYiIsImFydGlmYWN0X3NwZWMiOiJjb20udHd6cmQuc2hvcHBpbmcubGlzdGluZ19jbGFpbXMvMS4xIiwiYXJ0aWZhY3RfdXJpIjoidHd6cmQ6Ly9jbGFpbXMvZXhhbXBsZS1zZWxsZXIiLCJldmlkZW5jZV9kaWdlc3QiOiJzaGEyNTY6MWVjMmUyYzM4NDkyZWQ0MDcwZDdiYTdiNjk4Y2VjYWFlZGM1ZWMxYmI5NzQyYjdlZjVlNTE3ODlkYmQ5MzE5MCIsImV2aWRlbmNlX3VyaSI6InR3enJkOi8vY2xhaW1zL2V4YW1wbGUtc2VsbGVyL2V2aWRlbmNlIiwiZXhwaXJlc19hdCI6MTc5MjUwMTIwMCwia2luZCI6InB1YmxpY19saXN0aW5nIiwib2JzZXJ2ZWRfYXQiOiIyMDI2LTEwLTIwVDExOjU4OjAwWiJ9LCJwYXJ0eSI6eyJjbGFzc2lmaWNhdGlvbiI6ImV4dGVybmFsIiwiY2xhc3NpZmllZF9hdCI6IjIwMjYtMTAtMjBUMTE6NTk6MDBaIiwicm9sZXMiOnsiZXNjcm93X2FnZW50IjpmYWxzZSwiZmFjaWxpdGF0b3IiOmZhbHNlLCJmZWVfcmVjaXBpZW50IjpmYWxzZSwibWVyY2hhbnQiOmZhbHNlLCJtZXRlciI6ZmFsc2UsInNlbGxlcl9vcGVyYXRvciI6ZmFsc2UsInNldHRsZXIiOmZhbHNlLCJzcG9uc29yIjpmYWxzZX19LCJwb2xpY3lfdmVyc2lvbiI6InNlbGxlci1vYnNlcnZhdGlvbi1wYXJ0eS1wb2xpY3kvMSIsInByb2ZpbGUiOiJ4eXoudHd6cmQuc2VsbGVyX29ic2VydmF0aW9uLzEiLCJzZWxsZXIiOnsiaWQiOiJzb2xhbmE6NWV5a3Q0VXNGdjhQOE5KZFRSRXBZMXZ6cUtxWkt2ZHA6U2VsbGVyMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTEiLCJuZXR3b3JrIjoic29sYW5hOjVleWt0NFVzRnY4UDhOSmRUUkVwWTF2enFLcVpLdmRwIn0sInN1YiI6InNvbGFuYTo1ZXlrdDRVc0Z2OFA4TkpkVFJFcFkxdnpxS3FaS3ZkcDpTZWxsZXIxMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMSJ9.yZhWX1OY_x-dW5lS3m-CsbR2KOML_abQJaVyDeuORSHxObZtVR5K7gZI6Qv8sIhkp6KMJB8xTm-8BoTOAL7BAw",
+        "kid": "twzrd-seller-observation-test-2026-10",
+        "provider_jwks": "https://twzrd.xyz/.well-known/jwks.json"
+      },
+      "expected": {
+        "signature_valid": false,
+        "accepted": false,
+        "reason": "invalid_signature"
+      }
+    },
+    "rotated-key": {
+      "envelope": {
+        "format": "application/twzrd-seller-observation+jwt",
+        "jws": "eyJhbGciOiJFZERTQSIsImtpZCI6InR3enJkLXNlbGxlci1vYnNlcnZhdGlvbi1yZXRpcmVkLXRlc3Qta2V5IiwidHlwIjoiYXBwbGljYXRpb24vdHd6cmQtc2VsbGVyLW9ic2VydmF0aW9uK2p3dCJ9.eyJhdWQiOiJ1Y3A6Y2hlY2tvdXQ6Y3NfZXh0ZXJuYWxfMDAxIiwiZXhwIjoxNzkyNDk3ODcwLCJpYXQiOjE3OTI0OTc1NzAsImlzcyI6Imh0dHBzOi8vdHd6cmQueHl6IiwianRpIjoidXJuOnV1aWQ6MDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDA0IiwibmJmIjoxNzkyNDk3NTcwLCJvYnNlcnZhdGlvbiI6eyJhcnRpZmFjdF9kaWdlc3QiOiJzaGEyNTY6ODFlNzcyZTlmNWU3YjIwNzEyZjkxOGRlOWVlZDY1NmIzMDQzMDY4YWY5ZGE2MTUyYzQ3YWYyNjNlNDVlYTNmYiIsImFydGlmYWN0X3NwZWMiOiJjb20udHd6cmQuc2hvcHBpbmcubGlzdGluZ19jbGFpbXMvMS4xIiwiYXJ0aWZhY3RfdXJpIjoidHd6cmQ6Ly9jbGFpbXMvZXhhbXBsZS1zZWxsZXIiLCJldmlkZW5jZV9kaWdlc3QiOiJzaGEyNTY6MWVjMmUyYzM4NDkyZWQ0MDcwZDdiYTdiNjk4Y2VjYWFlZGM1ZWMxYmI5NzQyYjdlZjVlNTE3ODlkYmQ5MzE5MCIsImV2aWRlbmNlX3VyaSI6InR3enJkOi8vY2xhaW1zL2V4YW1wbGUtc2VsbGVyL2V2aWRlbmNlIiwiZXhwaXJlc19hdCI6MTc5MjUwMTIwMCwia2luZCI6InB1YmxpY19saXN0aW5nIiwib2JzZXJ2ZWRfYXQiOiIyMDI2LTEwLTIwVDExOjU4OjAwWiJ9LCJwYXJ0eSI6eyJjbGFzc2lmaWNhdGlvbiI6ImV4dGVybmFsIiwiY2xhc3NpZmllZF9hdCI6IjIwMjYtMTAtMjBUMTE6NTk6MDBaIiwicm9sZXMiOnsiZXNjcm93X2FnZW50IjpmYWxzZSwiZmFjaWxpdGF0b3IiOmZhbHNlLCJmZWVfcmVjaXBpZW50IjpmYWxzZSwibWVyY2hhbnQiOmZhbHNlLCJtZXRlciI6ZmFsc2UsInNlbGxlcl9vcGVyYXRvciI6ZmFsc2UsInNldHRsZXIiOmZhbHNlLCJzcG9uc29yIjpmYWxzZX19LCJwb2xpY3lfdmVyc2lvbiI6InNlbGxlci1vYnNlcnZhdGlvbi1wYXJ0eS1wb2xpY3kvMSIsInByb2ZpbGUiOiJ4eXoudHd6cmQuc2VsbGVyX29ic2VydmF0aW9uLzEiLCJzZWxsZXIiOnsiaWQiOiJzb2xhbmE6NWV5a3Q0VXNGdjhQOE5KZFRSRXBZMXZ6cUtxWkt2ZHA6U2VsbGVyMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTEiLCJuZXR3b3JrIjoic29sYW5hOjVleWt0NFVzRnY4UDhOSmRUUkVwWTF2enFLcVpLdmRwIn0sInN1YiI6InNvbGFuYTo1ZXlrdDRVc0Z2OFA4TkpkVFJFcFkxdnpxS3FaS3ZkcDpTZWxsZXIxMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMSJ9.jDUAhpUaF8UT7EgXJpKLGmevs3z22D3ybzhfA4vIGIbkzXw49CwHTZ5tNjsk3ZYMy0mSyLSdBr3g0-VzTjQnCQ",
+        "kid": "twzrd-seller-observation-retired-test-key",
+        "provider_jwks": "https://twzrd.xyz/.well-known/jwks.json"
+      },
+      "expected": {
+        "signature_valid": false,
+        "accepted": false,
+        "reason": "unknown_kid"
+      }
+    },
+    "conflicted-observation": {
+      "issuance_input": {
+        "checkout_session": "ucp:checkout:cs_external_001",
+        "expires_at": 1792497870,
+        "issued_at": 1792497570,
+        "jti": "urn:uuid:00000000-0000-4000-8000-000000000006",
+        "observation": {
+          "artifact_digest": "sha256:81e772e9f5e7b20712f918de9eed656b3043068af9da6152c47af263e45ea3fb",
+          "artifact_uri": "twzrd://claims/example-seller",
+          "evidence_digest": "sha256:1ec2e2c38492ed4070d7ba7b698cecaaedc5ec1bb9742b7ef5e51789dbd93190",
+          "evidence_uri": "twzrd://claims/example-seller/evidence",
+          "expires_at": 1792501200,
+          "observed_at": "2026-10-20T11:58:00Z"
+        },
+        "party_classified_at": "2026-10-20T11:59:00Z",
+        "party_context": {
+          "seller_operator": false,
+          "merchant": false,
+          "meter": false,
+          "facilitator": true,
+          "settler": false,
+          "sponsor": false,
+          "escrow_agent": false,
+          "fee_recipient": false
+        },
+        "policy_version": "seller-observation-party-policy/1",
+        "seller": {
+          "id": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp:Seller11111111111111111111111111111111111",
+          "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp"
+        }
+      },
+      "expected": {
+        "issued": false,
+        "reason": "party_conflict",
+        "signer_invocations": 0
+      }
+    },
+    "party-conflicted": {
+      "issuance_input": {
+        "checkout_session": "ucp:checkout:cs_external_001",
+        "expires_at": 1792497870,
+        "issued_at": 1792497570,
+        "jti": "urn:uuid:00000000-0000-4000-8000-000000000007",
+        "observation": {
+          "artifact_digest": "sha256:81e772e9f5e7b20712f918de9eed656b3043068af9da6152c47af263e45ea3fb",
+          "artifact_uri": "twzrd://claims/example-seller",
+          "evidence_digest": "sha256:1ec2e2c38492ed4070d7ba7b698cecaaedc5ec1bb9742b7ef5e51789dbd93190",
+          "evidence_uri": "twzrd://claims/example-seller/evidence",
+          "expires_at": 1792501200,
+          "observed_at": "2026-10-20T11:58:00Z"
+        },
+        "party_classified_at": "2026-10-20T11:59:00Z",
+        "party_context": {
+          "seller_operator": false,
+          "merchant": false,
+          "meter": false,
+          "facilitator": true,
+          "settler": false,
+          "sponsor": true,
+          "escrow_agent": false,
+          "fee_recipient": false
+        },
+        "policy_version": "seller-observation-party-policy/1",
+        "seller": {
+          "id": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp:Seller11111111111111111111111111111111111",
+          "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp"
+        }
+      },
+      "expected": {
+        "issued": false,
+        "reason": "party_conflict",
+        "signer_invocations": 0
+      }
+    },
+    "party-undetermined": {
+      "issuance_input": {
+        "checkout_session": "ucp:checkout:cs_external_001",
+        "expires_at": 1792497870,
+        "issued_at": 1792497570,
+        "jti": "urn:uuid:00000000-0000-4000-8000-000000000008",
+        "observation": {
+          "artifact_digest": "sha256:81e772e9f5e7b20712f918de9eed656b3043068af9da6152c47af263e45ea3fb",
+          "artifact_uri": "twzrd://claims/example-seller",
+          "evidence_digest": "sha256:1ec2e2c38492ed4070d7ba7b698cecaaedc5ec1bb9742b7ef5e51789dbd93190",
+          "evidence_uri": "twzrd://claims/example-seller/evidence",
+          "expires_at": 1792501200,
+          "observed_at": "2026-10-20T11:58:00Z"
+        },
+        "party_classified_at": "2026-10-20T11:59:00Z",
+        "party_context": {
+          "seller_operator": false,
+          "merchant": false,
+          "meter": false,
+          "settler": false,
+          "sponsor": false,
+          "escrow_agent": false,
+          "fee_recipient": false
+        },
+        "policy_version": "seller-observation-party-policy/1",
+        "seller": {
+          "id": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp:Seller11111111111111111111111111111111111",
+          "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp"
+        }
+      },
+      "expected": {
+        "issued": false,
+        "reason": "party_status_unknown",
+        "signer_invocations": 0
+      }
+    }
+  }
+}

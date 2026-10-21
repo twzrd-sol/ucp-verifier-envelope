@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "crv": "Ed25519",
+      "x": "y982j4frnORP9gUs534coBoZjXfZ0jLuZ26NR6BuFtI",
+      "kty": "OKP",
+      "kid": "twzrd-seller-observation-test-2026-10",
+      "use": "sig",
+      "alg": "EdDSA"
+    }
+  ]
+}

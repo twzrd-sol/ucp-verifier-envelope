@@ -16,6 +16,7 @@ Demonstrate the whole proposal end to end: a real checkout where an agent presen
 - Facet (`issuer.facet.llc`), agent identity, ES256 / compact JWS
 - Fidacy (`com.fidacy.trust_verdict`), transaction risk, EdDSA / JCS-canonical
 - Fidacy (`com.fidacy.decision_provenance`), decision provenance, EdDSA / JCS-canonical
+- TWZRD (`xyz.twzrd.seller_observation`), seller-side observation, EdDSA / JCS-canonical
 
 ## Spec
 
@@ -30,6 +31,9 @@ Demonstrate the whole proposal end to end: a real checkout where an agent presen
 - [`spec/claim-types/decision-provenance.md`](spec/claim-types/decision-provenance.md),
   the decision-provenance profile (`com.fidacy.decision_provenance`), keyed to the
   vectors in `fidacy-provenance/`.
+- [`spec/claim-types/seller-observation.md`](spec/claim-types/seller-observation.md),
+  the seller-observation profile (`xyz.twzrd.seller_observation`), keyed to the
+  vectors in `twzrd-observation/`.
 - [`spec/policy-and-model-versioning.md`](spec/policy-and-model-versioning.md), what
   `policy_version` and `model_version` are for, and why a claim type that carries
   a judgement rather than a fact has to sign them.

@@ -209,8 +209,9 @@ hollow on the economics. This is the
 | `com.fidacy.trust_verdict` | risk | session | EdDSA (Ed25519) | `application/vc+jws` | [claim-types/risk.md](claim-types/risk.md) |
 | `com.fidacy.decision_provenance` | decision-provenance | record | EdDSA (Ed25519) | `fidacy-artifact-receipt+jws` | [claim-types/decision-provenance.md](claim-types/decision-provenance.md) |
 | `com.algovoi.decision_provenance` | decision-provenance | session | ML-DSA-65 (RFC 9964) | `application/vc+jws` | [claim-types/decision-provenance-algovoi.md](claim-types/decision-provenance-algovoi.md) |
+| `xyz.twzrd.seller_observation` | seller-observation | session | EdDSA (Ed25519) | `application/twzrd-seller-observation+jwt` | [claim-types/seller-observation.md](claim-types/seller-observation.md) |
 
-Four signals verify under the envelope today, across three independent issuers and
+Five signals verify under the envelope today, across four independent issuers and
 three signature algorithms, which is past the bar for graduating the envelope from
 vendor-namespaced to a core, neutrally-owned spec.
 
